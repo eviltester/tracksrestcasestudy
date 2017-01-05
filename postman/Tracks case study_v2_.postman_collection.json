@@ -1,0 +1,1173 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Tracks case study",
+		"_postman_id": "1a93d9d2-6fe4-7e91-8aa0-54f1cce2654b",
+		"description": "This is the Postman collection for the Tracks Case Study.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Contexts",
+			"description": "",
+			"item": [
+				{
+					"name": "List Contexts",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/contexts.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Context ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/contexts/ID.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List Context ID ToDos",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/contexts/ID/todos.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add Context",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/contexts.xml",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    <context>\n        <name>contextname</name>\n    </context>"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"description": "",
+			"item": [
+				{
+					"name": "List Projects",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/projects.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Get projects.xml"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/projects/ID.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project ID ToDos",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/projects/ID/todos.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add Project",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/projects.xml",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    <project>\n        <default-context-id type=\"integer\" nil=\"true\"/>\n        <default-tags></default-tags>\n        <description></description>\n        <name>projectname</name>\n    </project>"
+						},
+						"description": "\nGenerated from a curl request: \\ncurl -u user:bitnami -H \\\"Content-Type: text/xml\\\" -d \\\n'<project><name><![CDATA[<img src=logout/> ]]> This Project Will Log You Out</name></project>' http://192.168.1.147/projects.xml -i"
+					},
+					"response": []
+				},
+				{
+					"name": "AmendProject",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/projects/ID.xml",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    <project>\n        <default-context-id type=\"integer\" nil=\"true\"/>\n        <default-tags></default-tags>\n        <description></description>\n        <name>projectname</name>\n        <state>active</state>\n    </project>"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/projects/ID.xml",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ToDos",
+			"description": "",
+			"item": [
+				{
+					"name": "List ToDos",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/todos.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Get todos.xml"
+					},
+					"response": []
+				},
+				{
+					"name": "Get ToDo ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/todos/ID.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Get Specific ToDo"
+					},
+					"response": []
+				},
+				{
+					"name": "List done ToDos",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/todos/done.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Docs say /done.xml actually /todos/done.xml"
+					},
+					"response": []
+				},
+				{
+					"name": "List Tickler",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/tickler.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add ToDo",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "user",
+								"password": "bitnami",
+								"showPassword": false
+							}
+						},
+						"url": "http://{{url}}/todos.xml",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<todo>\n  <description>todotext</description>\n  <context_id>contextid</context_id>\n  <project_id>projectid</project_id>\n</todo>"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"description": "",
+			"item": [
+				{
+					"name": "List Users",
+					"request": {
+						"url": "http://{{url}}/users.xml",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"url": "http://{{url}}/users.xml",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNlcjpiaXRuYW1p",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<user>\n    <login>username</login>\n    <password>password</password>\n</user>"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "List Hidden NOT WORKING",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/hidden.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "docs say /hidden.xml can't get this working though\n\nTried\n\n404 error /hidden.xml\n500 error /projects/hidden.xml\n\nTried with no projects hidden\nTried with one project hidden"
+			},
+			"response": []
+		},
+		{
+			"name": "List Calendar",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/calendar.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete ToDo ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/todos/ID.xml",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Delete Specific ToDo"
+			},
+			"response": []
+		},
+		{
+			"name": "List Contexts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/contexts.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Context ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/contexts/ID.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Context ID ToDos",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/contexts/ID/todos.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Context",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/contexts.xml",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    <context>\n        <name>contextname</name>\n    </context>"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Projects",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/projects.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get projects.xml"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Project ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/projects/ID.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Project ID ToDos",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/projects/ID/todos.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Project",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/projects.xml",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    <project>\n        <default-context-id type=\"integer\" nil=\"true\"/>\n        <default-tags></default-tags>\n        <description></description>\n        <name>projectname</name>\n    </project>"
+				},
+				"description": "\nGenerated from a curl request: \\ncurl -u user:bitnami -H \\\"Content-Type: text/xml\\\" -d \\\n'<project><name><![CDATA[<img src=logout/> ]]> This Project Will Log You Out</name></project>' http://192.168.1.147/projects.xml -i"
+			},
+			"response": []
+		},
+		{
+			"name": "AmendProject",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/projects/ID.xml",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    <project>\n        <default-context-id type=\"integer\" nil=\"true\"/>\n        <default-tags></default-tags>\n        <description></description>\n        <name>projectname</name>\n        <state>active</state>\n    </project>"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Project ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/projects/ID.xml",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List ToDos",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/todos.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get todos.xml"
+			},
+			"response": []
+		},
+		{
+			"name": "Get ToDo ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/todos/ID.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get Specific ToDo"
+			},
+			"response": []
+		},
+		{
+			"name": "List done ToDos",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/todos/done.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Docs say /done.xml actually /todos/done.xml"
+			},
+			"response": []
+		},
+		{
+			"name": "List Tickler",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/tickler.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add ToDo",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "user",
+						"password": "bitnami",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/todos.xml",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<todo>\n  <description>todotext</description>\n  <context_id>contextid</context_id>\n  <project_id>projectid</project_id>\n</todo>"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Users",
+			"request": {
+				"url": "http://{{url}}/users.xml",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"url": "http://{{url}}/users.xml",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpiaXRuYW1p",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<user>\n    <login>username</login>\n    <password>password</password>\n</user>"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "alan",
+						"password": "alantestpassword",
+						"showPassword": false
+					}
+				},
+				"url": "http://{{url}}/logout",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWxhbjphbGFudGVzdHBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
