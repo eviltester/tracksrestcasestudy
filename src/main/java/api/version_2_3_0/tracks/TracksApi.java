@@ -111,7 +111,6 @@ public class TracksApi {
         return response;
     }
 
-
     public Response createTodo(String todoName, String projectId, String contextId) {
         String msg = String.format("<todo>\n<description>%s</description>\n" +
                         "  <project_id>%s</project_id>\n" +
@@ -160,6 +159,13 @@ public class TracksApi {
     }
 
 
+    // rather than code a bunch of 'set' and fields
+    //if(element.name().contentEquals("id")){
+    //    project.setId(element.value());
+    //}
+    // - just add them to a hash
+    // e.g. project.setKeyValuePair(element.name(), element.value());
+
     public List<TracksProject> getProjects() {
 
         List<TracksProject> projects = new ArrayList<>();
@@ -180,12 +186,6 @@ public class TracksApi {
             for(Node element : contextNode.children().list()){
 
                 project.setKeyValuePair(element.name(), element.value());
-
-                // rather than code a bunch of 'set' and fields
-                // - just add them to a hash
-                //if(element.name().contentEquals("id")){
-                //    project.setId(element.value());
-                //}
             }
             projects.add(project);
         }
