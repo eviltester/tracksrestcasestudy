@@ -126,10 +126,6 @@ public class HttpMessageSender {
     }
 
 
-    public Response getResponseFrom(String endpoint){
-        return getResponseFrom(endpoint, anEmptyCookieJar() );
-    }
-
     public Response getXMLResponseFrom(String endpoint) {
 
         URL theEndPointUrl = createEndPointURL(url, endpoint);
@@ -143,6 +139,10 @@ public class HttpMessageSender {
                 andReturn();
 
         return setLastResponse(ret);
+    }
+
+    public Response getResponseFrom(String endpoint){
+        return getResponseFrom(endpoint, anEmptyCookieJar() );
     }
 
     public Response getResponseFrom(String endpoint,
