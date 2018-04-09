@@ -10,10 +10,25 @@
 
     <dependencies>
 
+        <!-- if you are using Java 1.7 or 1.8,
+             which the case study was written against,
+             then version 3.0.1 of rest-assured will work.
+
+             If you are using Java 1.9 then,
+                at the time of writing this comment 20180409,
+             The version of rest-assured needs to be 3.0.7
+
+             Since, I'm assuming most people will be using Java 1.9 I have
+             updated the source to use version 3.0.7 of RestAssured.
+
+             Although when I do this I have failing tests in some of the RestAssured XML serialisation examples,
+             not sure why yet.
+              -->
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>3.0.1</version>
+            <version>3.0.7</version>
         </dependency>
 
         <dependency>
