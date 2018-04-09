@@ -31,6 +31,64 @@
             <version>3.0.7</version>
         </dependency>
 
+
+
+        <!-- Added the following dependencies when running 3.0.7 against Java 1.9
+
+            To fix the following tests
+
+            -  `anXmlAPISerializationExample`
+            - `aSetOfXmlPathExamples`
+            - `anXmlAPIDeserializationExample`
+            - `anXmlDeserializationExample`
+            - `anXmlDeserializationExampleFromUrl`
+
+            They do not appear to impact Java 1.8 but if you experience issues you can remove them
+            I did not need these when running on Java 1.7 or Java 1.8 against version 3.0.1 of Rest Assured
+        -->
+
+        <!--
+        To remove the error
+
+        ~~~~~~~~
+        java.lang.RuntimeException: javax.xml.bind.JAXBException
+         - with linked exception:
+        [java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory]
+        ~~~~~~~~
+        -->
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+
+        <!--
+        To remove the error
+
+        ~~~~~~~~
+        java.lang.NoClassDefFoundError: com/sun/xml/bind/v2/model/annotation/AnnotationReader
+        ~~~~~~~~
+        -->
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+
+        <!--
+        And to remove the error:
+
+        ~~~~~~~~
+        java.lang.NoClassDefFoundError: javax/activation/DataSource
+        ~~~~~~~~
+        -->
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
