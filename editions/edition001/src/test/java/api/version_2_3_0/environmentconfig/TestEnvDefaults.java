@@ -6,7 +6,7 @@ import api.version_2_3_0.tracks.http.URLifier;
 import java.net.URL;
 
 public class TestEnvDefaults {
-    public static final String theURL = "http://localhost:80";
+    public static final String theURL = "http://192.168.126.129";
     public static final String adminUserName="user";
     public static final String adminUserPassword="bitnami";
     public static final String proxyUrl="localhost";

@@ -10,17 +10,20 @@
 
     <dependencies>
 
-        <!--
+        <!-- if you are using Java 1.7 or 1.8,
+             which the case study was written against,
+             then version 3.0.1 of rest-assured will work.
 
-        Java has been updated to version 21, and most people will be installing
-        a recent version of Java. This code has been updated to work with
-        updated versions of the JDK.
+             If you are using Java 1.9 then,
+                at the time of writing this comment 20180409,
+             The version of rest-assured needs to be 3.0.7
 
-        The code in the editions\edition001 folder will work with JDKs 1.7, 1.8 and 1.9
+             Since, I'm assuming most people will be using Java 1.9 I have
+             updated the source to use version 3.0.7 of RestAssured.
 
-
-
-        -->
+             Although when I do this I have failing tests in some of the RestAssured XML serialisation examples,
+             not sure why yet.
+              -->
 
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -59,7 +62,6 @@
             <version>2.3.0</version>
         </dependency>
 
-
         <!--
         To remove the error
 
@@ -90,7 +92,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.1</version>
+            <version>4.11</version>
         </dependency>
 
         <dependency>
@@ -108,8 +110,8 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
             <configuration>
-                <source>1.14</source>
-                <target>1.14</target>
+                <source>1.7</source>
+                <target>1.7</target>
             </configuration>
         </plugin>
     </plugins>
