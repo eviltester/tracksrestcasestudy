@@ -29,6 +29,26 @@ For more information on the docker images used here, see:
 
 - https://github.com/eviltester/tracksdocker
 
+## Mock Tracks
+
+There are some sections in the code that use a mocktracks setup that used to be deployed to `compendiumdev.co.uk`
+
+These are now available in a docker image.
+
+Run with:
+
+```
+docker run -d -p 80:80 eviltester/mocktracks
+```
+
+Then the endpoints listed in the test code can be found at:
+
+- http://localhost:80/apps/mocktracks/projectsjson.php
+- http://localhost:80/apps/mocktracks/projectsxml.php
+- http://localhost:80/apps/mocktracks/reflect.php
+
+In the example code, replacing `http://compendiumdev.co.uk` with `http://localhost:80`
+
 ## Editions Folder
 
 The `editions` folder contains the code published with, and released for, each edition of the book "Automating and Testing a REST API".
