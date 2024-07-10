@@ -41,3 +41,12 @@ Changes in main source that differ from the book source in editions:
     - `pom.xml` amended to use target Java `1.14` rather than `1.7`
     - `pom.xml` amended to use updated version of Junit 4
       - `api\version_2_3_0\environmentconfig` changed so `TestEnvDefaults.java` uses `localhost:80` as the URL
+
+
+## Deploy
+
+To deploy:
+
+`docker tag tracks eviltester/tracks`
+
+`docker tag tracks eviltester/tracks:version`
